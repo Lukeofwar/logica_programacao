@@ -1,16 +1,96 @@
-//pedir para o usuario digitar um numero
-    
+ //pedir para o usuario digitar um numero
+               var n1 = prompt('Digite um numero');
            //converter em numero inteiro
-            
+              n1 = parseInt(n1);
            //pedir para o usuario digitar outro numero
-            
+               var n2 = prompt('digite outro numero'); 
            //converter em numero inteiro
-        
+              n2 = parseInt(n2);
            //mostrar a subtração concatenando com o texto "a subtração é: ..."
-
+               alert("a subtração é: " + (n1 - n2));
            //mostrar a multiplicação concatenando com o texto "a multiplicação é: ..."
-              
+              alert("a multiplicação é: " + (n1 * n2));
            //mostrar a divisão concatenando com o texto "a divisão é: ..." 
-        
+              alert("a divisão é: " + (n1 / n2));       
            //mostrar a soma concatenando com texto "a soma é: ... " 
-            
+              alert("a soma é: " + (n1 + n2));
+
+
+
+            <script>
+        
+        //fazer o jogador1 digitar um numero 
+        var njogador1 = prompt('numero do jogador 1');
+        njogador1 = parseInt(njogador1);
+
+        //fazer o jogador2 digitar um numero
+        var njogador2 = prompt('numero do jogador 2');
+        njogador2 = parseInt(njogador2);
+
+        // se forem iguais, mostrar mensagem de 'empate'
+              if(njogador1 === njogador2){
+
+               alert('jogo empatado'); 
+
+               } else {
+
+                   
+
+        //sortear um numero de 0 a 1
+             var nsorteado = parseInt(Math.random() * 2);
+
+        // se o numero sorteado for 0, ganha quem tiver escolhido o numero MENOR
+            if(nSorteado === 0){
+
+                    if(nJogador1 < nJogador2){
+                        alert('ganhou o jogador 1');
+
+                    } else {
+                       alert(' ganhou o jogador 2');
+                    }   
+
+                   } else {
+                       if(nJogador1 > nJogador2){
+                           alert('ganhou o jogador 1');
+
+                       } else {
+                           alert('ganhou o jogador 2');      
+                   }
+       
+           
+        //se o numero sorteado for 1, ganha quem tiver escolhido o numero MAIOR
+
+       }
+
+    </script>
+
+
+   
+
+                 
+
+
+
+
+
+                        <script>
+           
+           var name = prompt("qual é o seu nome");
+
+                var n1 = prompt('digite um numero');
+                  n1 = parseFloat(n1);
+             
+                var n2 = parseFloat(prompt('digite outro numero')); 
+                
+                var media = (n1 + n2 / 2); 
+
+                if(n1 === 0 || n2 === 0 || media <=5){
+
+                alert("Parabéns! Você foi aprovado" + name);
+                  
+              } else {
+                      alert("desculpe, não foi dessa vez" + name);
+                   
+                   }
+                
+            </script>

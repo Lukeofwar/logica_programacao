@@ -18,11 +18,17 @@
             //repita até que índice seja <= 1000
 
             while(indice <= 1000){
-                document.write(numero + 'x'+ indice +'=' + (numero * indice) +'<br>');
+                document.write(numero + 'x'+ indice +'='+ 
+                (numero * indice) +'<br>');
+
+                if(indice % 10 === 0){
+                   document.write('<hr>');
+                }
 
                 indice = indice + 1;
             }
-                document.write('saiu do loop');
+
+                
 
        </script>
 

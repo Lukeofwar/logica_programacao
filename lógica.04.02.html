@@ -18,6 +18,8 @@
                     //perguntar o numero para o usuario
                        var n =prompt('digite um numero');
 
+                       LimparTabuada();
+
                     //converter o numero
                        n = parseFloat(n);   
                     //criar uma variavel que servira de indice
@@ -32,6 +34,11 @@
                          output.innerHTML = mensagem;
 
                     //mostra mensagem no output     
+               }
+
+               function LimparTabuada(){
+                   mensagem = '';
+                   output.innerHTML = mensagem
                }
 
               var output = document.querySelector('#output'); 

@@ -7,15 +7,37 @@
        <body>
            <h1>Lógica De Programação Com Javascript</h1>
 
+           <button onclick="MostrarTabuada()">Criar Tabuada</button>
+           <button onclick="LimparTabuada()">Limpar Tabuada</button>
+
            <div id="output"></div> 
 
            <script>
 
+               function MostrarTabuada(){
+                    //perguntar o numero para o usuario
+                       var n =prompt('digite um numero');
+
+                    //converter o numero
+                       n = parseFloat(n);   
+                    //criar uma variavel que servira de indice
+                         var i = 1;
+                    //enquanto indice <= 1000
+                         //concatena na variavel mensagem
+                         while(i <= 1000){
+                             mensagem += n + ' x '+ i +' = '+ (n*i) +' <br>';
+                             i++
+                         }
+
+                         output.innerHTML = mensagem;
+
+                    //mostra mensagem no output     
+               }
+
               var output = document.querySelector('#output'); 
 
-
-              output.innerHTML = "texto inserido por javascript"
-
+              var mensagem = '';
+            
            </script>
 
        </body>

@@ -101,4 +101,66 @@
                   mensagem += 'i: ' + i + '<br>';
               }
 
+:::::::::::
+
+               <button onclick="">+</button>
+           <button onclick="">-</button>
+           <button onclick="">/</button>
+           <button onclick="">*</button>
+
+           <script>
+              prompt('digite um numero');
+
+           </script>
+
+
+
+
+           :::::::
+
+
+             <button onclick="MostrarTabuada()">Criar Tabuada</button>
+           <button onclick="LimparTabuada()">Limpar Tabuada</button>
+
+           <div id="output"></div> 
+
+           <script>
+
+               function MostrarTabuada(){
+                    //perguntar o numero para o usuario
+                       var n =prompt('digite um numero');
+
+                       LimparTabuada();
+
+                    //converter o numero
+                       n = parseFloat(n);   
+                    //criar uma variavel que servira de indice
+                         var i = 1;
+                    //enquanto indice <= 1000
+                         //concatena na variavel mensagem
+                         while(i <= 1000){
+                             mensagem += n + ' x '+ i +' = '+ (n*i) +' <br>';
+                             i++
+                         }
+
+                         output.innerHTML = mensagem;
+
+                    //mostra mensagem no output     
+               }
+
+               function LimparTabuada(){
+                   mensagem = '';
+                   output.innerHTML = mensagem
+               }
+
+              var output = document.querySelector('#output'); 
+
+              var mensagem = '';
+            
+           </script>
+
+       </body>
+
+</html>
+
 
